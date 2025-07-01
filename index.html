@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Tebak Kata Islami</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <!-- Halaman Awal -->
+  <div id="start-screen">
+    <h1>Selamat Datang di Tebak Kata Islami!</h1>
+    <button id="start-button">Mulai Game</button>
+  </div>
+
+  <!-- Kontainer Game -->
+  <div class="game-container" style="display: none;">
+    <h1>Tebak Kata Islami</h1>
+    <div class="game-info">
+      <span id="level">Level: 1</span>
+      <span id="timer">Waktu: 60 detik</span>
+      <span id="score">Skor: 0</span>
+    </div>
+    <div class="word-scramble">
+      <h2 id="scrambled-word">_ _ _ _ _</h2>
+    </div>
+    <div class="input-area">
+      <input type="text" id="user-input" placeholder="Tebak kata di sini..." autocomplete="off"/>
+      <button id="check-button">Cek Jawaban</button>
+    </div>
+    <div id="feedback"></div>
+    <div class="game-over" id="game-over" style="display: none;">
+      <h2>Game Over!</h2>
+      <p>Skor akhir kamu: <span id="final-score">0</span></p>
+      <button id="restart-button">Main Lagi</button>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
